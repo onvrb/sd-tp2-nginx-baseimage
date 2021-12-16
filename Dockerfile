@@ -12,9 +12,6 @@ ENV LANGUAGE="en_US.UTF-8" \
 RUN apt update && \
     apt install nginx -y
 
-# remove old nginx config
-RUN rm -rf /etc/nginx/nginx.conf
-
 # add local files
 COPY root/ /
 
