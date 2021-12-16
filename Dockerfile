@@ -1,4 +1,4 @@
-FROM ghcr.io/onvrb/sd-tp2-baseimage:master
+FROM ghcr.io/onvrb/sd-tp2-ubuntu-baseimage:master
 RUN apt update && \
     apt install nginx -y
 
