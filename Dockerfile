@@ -2,7 +2,7 @@ FROM ghcr.io/onvrb/sd-tp2-ubuntu-baseimage:master
 
 # fix locales
 RUN apt update
-RUN apt install locales
+RUN apt install -y locales
 
 # set environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -14,7 +14,7 @@ ENV LANGUAGE="en_US.UTF-8" \
 RUN locale-gen en_US.UTF-8
 
 # install nginx
-RUN apt install nginx
+RUN apt install -y nginx
 
 # add local files
 COPY root/ /
